@@ -1,0 +1,315 @@
+[INFO] time: 2022-01-31 12:27:41 file: StartupInfoLogger.java class: ua.balu.toyshop.ToyShopApplication method: logStarting line: 55 thread: restartedMain - Starting ToyShopApplication using Java 1.8.0_322 on DESKTOP-454NK93 with PID 16192 (C:\Users\Росс\Desktop\JavaPract\ToyShop\target\classes started by Росс in C:\Users\Росс\Desktop\JavaPract\ToyShop)
+[INFO] time: 2022-01-31 12:27:41 file: SpringApplication.java class: ua.balu.toyshop.ToyShopApplication method: logStartupProfileInfo line: 635 thread: restartedMain - No active profile set, falling back to default profiles: default
+[INFO] time: 2022-01-31 12:27:41 file: DeferredLog.java class: org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor method: logTo line: 255 thread: restartedMain - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO] time: 2022-01-31 12:27:41 file: DeferredLog.java class: org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor method: logTo line: 255 thread: restartedMain - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO] time: 2022-01-31 12:27:42 file: RepositoryConfigurationDelegate.java class: org.springframework.data.repository.config.RepositoryConfigurationDelegate method: registerRepositoriesIn line: 132 thread: restartedMain - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] time: 2022-01-31 12:27:42 file: RepositoryConfigurationDelegate.java class: org.springframework.data.repository.config.RepositoryConfigurationDelegate method: registerRepositoriesIn line: 201 thread: restartedMain - Finished Spring Data repository scanning in 88 ms. Found 10 JPA repository interfaces.
+[INFO] time: 2022-01-31 12:27:42 file: TomcatWebServer.java class: org.springframework.boot.web.embedded.tomcat.TomcatWebServer method: initialize line: 108 thread: restartedMain - Tomcat initialized with port(s): 8080 (http)
+[INFO] time: 2022-01-31 12:27:43 file: DirectJDKLog.java class: org.apache.catalina.core.StandardService method: log line: 173 thread: restartedMain - Starting service [Tomcat]
+[INFO] time: 2022-01-31 12:27:43 file: DirectJDKLog.java class: org.apache.catalina.core.StandardEngine method: log line: 173 thread: restartedMain - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO] time: 2022-01-31 12:27:43 file: DirectJDKLog.java class: org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] method: log line: 173 thread: restartedMain - Initializing Spring embedded WebApplicationContext
+[INFO] time: 2022-01-31 12:27:43 file: ServletWebServerApplicationContext.java class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext method: prepareWebApplicationContext line: 290 thread: restartedMain - Root WebApplicationContext: initialization completed in 1854 ms
+[INFO] time: 2022-01-31 12:27:43 file: LogHelper.java class: org.hibernate.jpa.internal.util.LogHelper method: logPersistenceUnitInformation line: 31 thread: restartedMain - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] time: 2022-01-31 12:27:43 file: Version.java class: org.hibernate.Version method: logVersion line: 44 thread: restartedMain - HHH000412: Hibernate ORM core version 5.6.1.Final
+[INFO] time: 2022-01-31 12:27:43 file: JavaReflectionManager.java class: org.hibernate.annotations.common.Version method: <clinit> line: 56 thread: restartedMain - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO] time: 2022-01-31 12:27:44 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: getConnection line: 110 thread: restartedMain - HikariPool-1 - Starting...
+[INFO] time: 2022-01-31 12:27:46 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: getConnection line: 123 thread: restartedMain - HikariPool-1 - Start completed.
+[INFO] time: 2022-01-31 12:27:46 file: Dialect.java class: org.hibernate.dialect.Dialect method: <init> line: 175 thread: restartedMain - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO] time: 2022-01-31 12:27:48 file: JtaPlatformInitiator.java class: org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator method: initiateService line: 52 thread: restartedMain - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] time: 2022-01-31 12:27:48 file: AbstractEntityManagerFactoryBean.java class: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean method: buildNativeEntityManagerFactory line: 437 thread: restartedMain - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] time: 2022-01-31 12:27:49 file: JpaBaseConfiguration.java class: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration method: openEntityManagerInViewInterceptor line: 219 thread: restartedMain - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] time: 2022-01-31 12:27:49 file: DefaultSecurityFilterChain.java class: org.springframework.security.web.DefaultSecurityFilterChain method: <init> line: 51 thread: restartedMain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d306c33, org.springframework.security.web.context.SecurityContextPersistenceFilter@baf3733, org.springframework.security.web.header.HeaderWriterFilter@74a4d92, org.springframework.security.web.authentication.logout.LogoutFilter@558e123, ua.balu.toyshop.security.JwtFilter@6a58076c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@257aa8d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33aed97d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@216a9c9b, org.springframework.security.web.session.SessionManagementFilter@4b5393ad, org.springframework.security.web.access.ExceptionTranslationFilter@459beaad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66276c29]
+[WARN] time: 2022-01-31 12:27:50 file: ThymeleafAutoConfiguration.java class: org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration method: checkTemplateLocationExists line: 105 thread: restartedMain - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[INFO] time: 2022-01-31 12:27:50 file: OptionalLiveReloadServer.java class: org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer method: startServer line: 58 thread: restartedMain - LiveReload server is running on port 35729
+[INFO] time: 2022-01-31 12:27:50 file: TomcatWebServer.java class: org.springframework.boot.web.embedded.tomcat.TomcatWebServer method: start line: 220 thread: restartedMain - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] time: 2022-01-31 12:27:50 file: StartupInfoLogger.java class: ua.balu.toyshop.ToyShopApplication method: logStarted line: 61 thread: restartedMain - Started ToyShopApplication in 9.213 seconds (JVM running for 17.045)
+[INFO] time: 2022-01-31 12:27:53 file: DirectJDKLog.java class: org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] method: log line: 173 thread: http-nio-8080-exec-2 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] time: 2022-01-31 12:27:53 file: FrameworkServlet.java class: org.springframework.web.servlet.DispatcherServlet method: initServletBean line: 525 thread: http-nio-8080-exec-2 - Initializing Servlet 'dispatcherServlet'
+[INFO] time: 2022-01-31 12:27:53 file: FrameworkServlet.java class: org.springframework.web.servlet.DispatcherServlet method: initServletBean line: 547 thread: http-nio-8080-exec-2 - Completed initialization in 1 ms
+[INFO] time: 2022-01-31 12:27:53 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getJwtFromRequest line: 98 thread: http-nio-8080-exec-2 - Get jwt from Request
+[INFO] time: 2022-01-31 12:27:53 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: validateToken line: 69 thread: http-nio-8080-exec-2 - Token expired
+[INFO] time: 2022-01-31 12:27:53 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getAuthenticationFromToken line: 83 thread: http-nio-8080-exec-2 - Getting  authentication from token
+[INFO] time: 2022-01-31 12:27:53 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getEmailFromToken line: 89 thread: http-nio-8080-exec-2 - Get email from token
+[ERROR] time: 2022-01-31 12:27:53 file: DirectJDKLog.java class: org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] method: log line: 175 thread: http-nio-8080-exec-2 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2022-01-31T00:00:00Z. Current time: 2022-01-31T14:27:53Z, a difference of 52073630 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at ua.balu.toyshop.security.JwtTokenProvider.getEmailFromToken(JwtTokenProvider.java:92)
+	at ua.balu.toyshop.security.JwtTokenProvider.getAuthenticationFromToken(JwtTokenProvider.java:84)
+	at ua.balu.toyshop.security.JwtFilter.doFilter(JwtFilter.java:36)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] time: 2022-01-31 12:27:53 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getJwtFromRequest line: 98 thread: http-nio-8080-exec-2 - Get jwt from Request
+[INFO] time: 2022-01-31 12:27:53 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: validateToken line: 69 thread: http-nio-8080-exec-2 - Token expired
+[INFO] time: 2022-01-31 12:27:53 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getAuthenticationFromToken line: 83 thread: http-nio-8080-exec-2 - Getting  authentication from token
+[INFO] time: 2022-01-31 12:27:53 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getEmailFromToken line: 89 thread: http-nio-8080-exec-2 - Get email from token
+[ERROR] time: 2022-01-31 12:27:53 file: DirectJDKLog.java class: org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] method: log line: 175 thread: http-nio-8080-exec-2 - Servlet.service() for servlet [dispatcherServlet] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2022-01-31T00:00:00Z. Current time: 2022-01-31T14:27:53Z, a difference of 52073638 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at ua.balu.toyshop.security.JwtTokenProvider.getEmailFromToken(JwtTokenProvider.java:92)
+	at ua.balu.toyshop.security.JwtTokenProvider.getAuthenticationFromToken(JwtTokenProvider.java:84)
+	at ua.balu.toyshop.security.JwtFilter.doFilter(JwtFilter.java:36)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] time: 2022-01-31 12:27:53 file: DirectJDKLog.java class: org.apache.catalina.core.ContainerBase.[Tomcat].[localhost] method: log line: 175 thread: http-nio-8080-exec-2 - Exception Processing ErrorPage[errorCode=0, location=/error]
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2022-01-31T00:00:00Z. Current time: 2022-01-31T14:27:53Z, a difference of 52073638 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at ua.balu.toyshop.security.JwtTokenProvider.getEmailFromToken(JwtTokenProvider.java:92)
+	at ua.balu.toyshop.security.JwtTokenProvider.getAuthenticationFromToken(JwtTokenProvider.java:84)
+	at ua.balu.toyshop.security.JwtFilter.doFilter(JwtFilter.java:36)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] time: 2022-01-31 12:28:04 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getJwtFromRequest line: 98 thread: http-nio-8080-exec-4 - Get jwt from Request
+[INFO] time: 2022-01-31 12:28:04 file: JwtFilter.java class: ua.balu.toyshop.security.JwtFilter method: doFilter line: 47 thread: http-nio-8080-exec-4 - Filter token
+[INFO] time: 2022-01-31 12:28:04 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getJwtFromRequest line: 98 thread: http-nio-8080-exec-4 - Get jwt from Request
+[INFO] time: 2022-01-31 12:28:04 file: JwtFilter.java class: ua.balu.toyshop.security.JwtFilter method: doFilter line: 47 thread: http-nio-8080-exec-4 - Filter token
+[INFO] time: 2022-01-31 12:28:05 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: createToken line: 46 thread: http-nio-8080-exec-4 - Creating token
+[INFO] time: 2022-01-31 12:28:34 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getJwtFromRequest line: 98 thread: http-nio-8080-exec-5 - Get jwt from Request
+[INFO] time: 2022-01-31 12:28:34 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getAuthenticationFromToken line: 83 thread: http-nio-8080-exec-5 - Getting  authentication from token
+[INFO] time: 2022-01-31 12:28:34 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getEmailFromToken line: 89 thread: http-nio-8080-exec-5 - Get email from token
+[INFO] time: 2022-01-31 12:28:34 file: JwtFilter.java class: ua.balu.toyshop.security.JwtFilter method: doFilter line: 47 thread: http-nio-8080-exec-5 - Filter token
+[INFO] time: 2022-01-31 12:28:34 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getJwtFromRequest line: 98 thread: http-nio-8080-exec-5 - Get jwt from Request
+[INFO] time: 2022-01-31 12:28:34 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getAuthenticationFromToken line: 83 thread: http-nio-8080-exec-5 - Getting  authentication from token
+[INFO] time: 2022-01-31 12:28:34 file: JwtTokenProvider.java class: ua.balu.toyshop.security.JwtTokenProvider method: getEmailFromToken line: 89 thread: http-nio-8080-exec-5 - Get email from token
+[INFO] time: 2022-01-31 12:28:34 file: JwtFilter.java class: ua.balu.toyshop.security.JwtFilter method: doFilter line: 47 thread: http-nio-8080-exec-5 - Filter token
+[INFO] time: 2022-01-31 13:23:28 file: AbstractEntityManagerFactoryBean.java class: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean method: destroy line: 651 thread: Thread-23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO] time: 2022-01-31 13:23:28 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: close line: 350 thread: Thread-23 - HikariPool-1 - Shutdown initiated...
+[INFO] time: 2022-01-31 13:23:29 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: close line: 352 thread: Thread-23 - HikariPool-1 - Shutdown completed.
+[INFO] time: 2022-01-31 13:23:31 file: StartupInfoLogger.java class: ua.balu.toyshop.ToyShopApplication method: logStarting line: 55 thread: restartedMain - Starting ToyShopApplication using Java 1.8.0_322 on DESKTOP-454NK93 with PID 16192 (C:\Users\Росс\Desktop\JavaPract\ToyShop\target\classes started by Росс in C:\Users\Росс\Desktop\JavaPract\ToyShop)
+[INFO] time: 2022-01-31 13:23:31 file: SpringApplication.java class: ua.balu.toyshop.ToyShopApplication method: logStartupProfileInfo line: 635 thread: restartedMain - No active profile set, falling back to default profiles: default
+[INFO] time: 2022-01-31 13:23:31 file: RepositoryConfigurationDelegate.java class: org.springframework.data.repository.config.RepositoryConfigurationDelegate method: registerRepositoriesIn line: 132 thread: restartedMain - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] time: 2022-01-31 13:23:32 file: RepositoryConfigurationDelegate.java class: org.springframework.data.repository.config.RepositoryConfigurationDelegate method: registerRepositoriesIn line: 201 thread: restartedMain - Finished Spring Data repository scanning in 51 ms. Found 10 JPA repository interfaces.
+[INFO] time: 2022-01-31 13:23:32 file: TomcatWebServer.java class: org.springframework.boot.web.embedded.tomcat.TomcatWebServer method: initialize line: 108 thread: restartedMain - Tomcat initialized with port(s): 8080 (http)
+[INFO] time: 2022-01-31 13:23:32 file: DirectJDKLog.java class: org.apache.catalina.core.StandardService method: log line: 173 thread: restartedMain - Starting service [Tomcat]
+[INFO] time: 2022-01-31 13:23:32 file: DirectJDKLog.java class: org.apache.catalina.core.StandardEngine method: log line: 173 thread: restartedMain - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO] time: 2022-01-31 13:23:32 file: DirectJDKLog.java class: org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] method: log line: 173 thread: restartedMain - Initializing Spring embedded WebApplicationContext
+[INFO] time: 2022-01-31 13:23:32 file: ServletWebServerApplicationContext.java class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext method: prepareWebApplicationContext line: 290 thread: restartedMain - Root WebApplicationContext: initialization completed in 703 ms
+[INFO] time: 2022-01-31 13:23:32 file: LogHelper.java class: org.hibernate.jpa.internal.util.LogHelper method: logPersistenceUnitInformation line: 31 thread: restartedMain - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] time: 2022-01-31 13:23:32 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: getConnection line: 110 thread: restartedMain - HikariPool-2 - Starting...
+[INFO] time: 2022-01-31 13:23:32 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: getConnection line: 123 thread: restartedMain - HikariPool-2 - Start completed.
+[INFO] time: 2022-01-31 13:23:32 file: Dialect.java class: org.hibernate.dialect.Dialect method: <init> line: 175 thread: restartedMain - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO] time: 2022-01-31 13:23:34 file: JtaPlatformInitiator.java class: org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator method: initiateService line: 52 thread: restartedMain - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] time: 2022-01-31 13:23:34 file: AbstractEntityManagerFactoryBean.java class: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean method: buildNativeEntityManagerFactory line: 437 thread: restartedMain - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] time: 2022-01-31 13:23:34 file: JpaBaseConfiguration.java class: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration method: openEntityManagerInViewInterceptor line: 219 thread: restartedMain - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] time: 2022-01-31 13:23:34 file: DefaultSecurityFilterChain.java class: org.springframework.security.web.DefaultSecurityFilterChain method: <init> line: 51 thread: restartedMain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2144a54b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2cf24d29, org.springframework.security.web.header.HeaderWriterFilter@7fa45281, org.springframework.security.web.authentication.logout.LogoutFilter@50928f53, ua.balu.toyshop.security.JwtFilter@6a74a5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50e140a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d8c306e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@565da7fc, org.springframework.security.web.session.SessionManagementFilter@60b07d03, org.springframework.security.web.access.ExceptionTranslationFilter@5d943f69, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6bca2804]
+[WARN] time: 2022-01-31 13:23:34 file: ThymeleafAutoConfiguration.java class: org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration method: checkTemplateLocationExists line: 105 thread: restartedMain - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[INFO] time: 2022-01-31 13:23:34 file: OptionalLiveReloadServer.java class: org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer method: startServer line: 58 thread: restartedMain - LiveReload server is running on port 35729
+[INFO] time: 2022-01-31 13:23:34 file: TomcatWebServer.java class: org.springframework.boot.web.embedded.tomcat.TomcatWebServer method: start line: 220 thread: restartedMain - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] time: 2022-01-31 13:23:34 file: StartupInfoLogger.java class: ua.balu.toyshop.ToyShopApplication method: logStarted line: 61 thread: restartedMain - Started ToyShopApplication in 3.137 seconds (JVM running for 3361.374)
+[INFO] time: 2022-01-31 13:23:34 file: ConditionEvaluationDeltaLoggingListener.java class: org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener method: onApplicationEvent line: 63 thread: restartedMain - Condition evaluation unchanged
+[INFO] time: 2022-01-31 13:23:36 file: AbstractEntityManagerFactoryBean.java class: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean method: destroy line: 651 thread: Thread-29 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO] time: 2022-01-31 13:23:36 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: close line: 350 thread: Thread-29 - HikariPool-2 - Shutdown initiated...
+[INFO] time: 2022-01-31 13:23:36 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: close line: 352 thread: Thread-29 - HikariPool-2 - Shutdown completed.
+[INFO] time: 2022-01-31 13:23:36 file: StartupInfoLogger.java class: ua.balu.toyshop.ToyShopApplication method: logStarting line: 55 thread: restartedMain - Starting ToyShopApplication using Java 1.8.0_322 on DESKTOP-454NK93 with PID 16192 (C:\Users\Росс\Desktop\JavaPract\ToyShop\target\classes started by Росс in C:\Users\Росс\Desktop\JavaPract\ToyShop)
+[INFO] time: 2022-01-31 13:23:36 file: SpringApplication.java class: ua.balu.toyshop.ToyShopApplication method: logStartupProfileInfo line: 635 thread: restartedMain - No active profile set, falling back to default profiles: default
+[INFO] time: 2022-01-31 13:23:36 file: RepositoryConfigurationDelegate.java class: org.springframework.data.repository.config.RepositoryConfigurationDelegate method: registerRepositoriesIn line: 132 thread: restartedMain - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] time: 2022-01-31 13:23:36 file: RepositoryConfigurationDelegate.java class: org.springframework.data.repository.config.RepositoryConfigurationDelegate method: registerRepositoriesIn line: 201 thread: restartedMain - Finished Spring Data repository scanning in 43 ms. Found 10 JPA repository interfaces.
+[INFO] time: 2022-01-31 13:23:36 file: TomcatWebServer.java class: org.springframework.boot.web.embedded.tomcat.TomcatWebServer method: initialize line: 108 thread: restartedMain - Tomcat initialized with port(s): 8080 (http)
+[INFO] time: 2022-01-31 13:23:36 file: DirectJDKLog.java class: org.apache.catalina.core.StandardService method: log line: 173 thread: restartedMain - Starting service [Tomcat]
+[INFO] time: 2022-01-31 13:23:36 file: DirectJDKLog.java class: org.apache.catalina.core.StandardEngine method: log line: 173 thread: restartedMain - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO] time: 2022-01-31 13:23:36 file: DirectJDKLog.java class: org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] method: log line: 173 thread: restartedMain - Initializing Spring embedded WebApplicationContext
+[INFO] time: 2022-01-31 13:23:36 file: ServletWebServerApplicationContext.java class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext method: prepareWebApplicationContext line: 290 thread: restartedMain - Root WebApplicationContext: initialization completed in 307 ms
+[INFO] time: 2022-01-31 13:23:36 file: LogHelper.java class: org.hibernate.jpa.internal.util.LogHelper method: logPersistenceUnitInformation line: 31 thread: restartedMain - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] time: 2022-01-31 13:23:36 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: getConnection line: 110 thread: restartedMain - HikariPool-3 - Starting...
+[INFO] time: 2022-01-31 13:23:36 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: getConnection line: 123 thread: restartedMain - HikariPool-3 - Start completed.
+[INFO] time: 2022-01-31 13:23:36 file: Dialect.java class: org.hibernate.dialect.Dialect method: <init> line: 175 thread: restartedMain - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO] time: 2022-01-31 13:23:37 file: JtaPlatformInitiator.java class: org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator method: initiateService line: 52 thread: restartedMain - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] time: 2022-01-31 13:23:37 file: AbstractEntityManagerFactoryBean.java class: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean method: buildNativeEntityManagerFactory line: 437 thread: restartedMain - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] time: 2022-01-31 13:23:37 file: JpaBaseConfiguration.java class: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration method: openEntityManagerInViewInterceptor line: 219 thread: restartedMain - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] time: 2022-01-31 13:23:37 file: DefaultSecurityFilterChain.java class: org.springframework.security.web.DefaultSecurityFilterChain method: <init> line: 51 thread: restartedMain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b579680, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e54ade9, org.springframework.security.web.header.HeaderWriterFilter@1b0c8f06, org.springframework.security.web.authentication.logout.LogoutFilter@49680283, ua.balu.toyshop.security.JwtFilter@6f45bd2b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b4e9233, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@744548e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50c8c517, org.springframework.security.web.session.SessionManagementFilter@6e870586, org.springframework.security.web.access.ExceptionTranslationFilter@44d021f9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46c06ad1]
+[WARN] time: 2022-01-31 13:23:37 file: ThymeleafAutoConfiguration.java class: org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration method: checkTemplateLocationExists line: 105 thread: restartedMain - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[INFO] time: 2022-01-31 13:23:37 file: OptionalLiveReloadServer.java class: org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer method: startServer line: 58 thread: restartedMain - LiveReload server is running on port 35729
+[INFO] time: 2022-01-31 13:23:37 file: TomcatWebServer.java class: org.springframework.boot.web.embedded.tomcat.TomcatWebServer method: start line: 220 thread: restartedMain - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] time: 2022-01-31 13:23:37 file: StartupInfoLogger.java class: ua.balu.toyshop.ToyShopApplication method: logStarted line: 61 thread: restartedMain - Started ToyShopApplication in 1.547 seconds (JVM running for 3364.699)
+[INFO] time: 2022-01-31 13:23:37 file: ConditionEvaluationDeltaLoggingListener.java class: org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener method: onApplicationEvent line: 63 thread: restartedMain - Condition evaluation unchanged
+[INFO] time: 2022-01-31 13:26:23 file: AbstractEntityManagerFactoryBean.java class: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean method: destroy line: 651 thread: Thread-33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO] time: 2022-01-31 13:26:23 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: close line: 350 thread: Thread-33 - HikariPool-3 - Shutdown initiated...
+[INFO] time: 2022-01-31 13:26:23 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: close line: 352 thread: Thread-33 - HikariPool-3 - Shutdown completed.
+[INFO] time: 2022-01-31 13:26:23 file: StartupInfoLogger.java class: ua.balu.toyshop.ToyShopApplication method: logStarting line: 55 thread: restartedMain - Starting ToyShopApplication using Java 1.8.0_322 on DESKTOP-454NK93 with PID 16192 (C:\Users\Росс\Desktop\JavaPract\ToyShop\target\classes started by Росс in C:\Users\Росс\Desktop\JavaPract\ToyShop)
+[INFO] time: 2022-01-31 13:26:23 file: SpringApplication.java class: ua.balu.toyshop.ToyShopApplication method: logStartupProfileInfo line: 635 thread: restartedMain - No active profile set, falling back to default profiles: default
+[INFO] time: 2022-01-31 13:26:23 file: RepositoryConfigurationDelegate.java class: org.springframework.data.repository.config.RepositoryConfigurationDelegate method: registerRepositoriesIn line: 132 thread: restartedMain - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] time: 2022-01-31 13:26:23 file: RepositoryConfigurationDelegate.java class: org.springframework.data.repository.config.RepositoryConfigurationDelegate method: registerRepositoriesIn line: 201 thread: restartedMain - Finished Spring Data repository scanning in 67 ms. Found 10 JPA repository interfaces.
+[INFO] time: 2022-01-31 13:26:24 file: TomcatWebServer.java class: org.springframework.boot.web.embedded.tomcat.TomcatWebServer method: initialize line: 108 thread: restartedMain - Tomcat initialized with port(s): 8080 (http)
+[INFO] time: 2022-01-31 13:26:24 file: DirectJDKLog.java class: org.apache.catalina.core.StandardService method: log line: 173 thread: restartedMain - Starting service [Tomcat]
+[INFO] time: 2022-01-31 13:26:24 file: DirectJDKLog.java class: org.apache.catalina.core.StandardEngine method: log line: 173 thread: restartedMain - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO] time: 2022-01-31 13:26:24 file: DirectJDKLog.java class: org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] method: log line: 173 thread: restartedMain - Initializing Spring embedded WebApplicationContext
+[INFO] time: 2022-01-31 13:26:24 file: ServletWebServerApplicationContext.java class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext method: prepareWebApplicationContext line: 290 thread: restartedMain - Root WebApplicationContext: initialization completed in 490 ms
+[INFO] time: 2022-01-31 13:26:24 file: LogHelper.java class: org.hibernate.jpa.internal.util.LogHelper method: logPersistenceUnitInformation line: 31 thread: restartedMain - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] time: 2022-01-31 13:26:24 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: getConnection line: 110 thread: restartedMain - HikariPool-4 - Starting...
+[INFO] time: 2022-01-31 13:26:24 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: getConnection line: 123 thread: restartedMain - HikariPool-4 - Start completed.
+[INFO] time: 2022-01-31 13:26:24 file: Dialect.java class: org.hibernate.dialect.Dialect method: <init> line: 175 thread: restartedMain - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO] time: 2022-01-31 13:26:25 file: JtaPlatformInitiator.java class: org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator method: initiateService line: 52 thread: restartedMain - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] time: 2022-01-31 13:26:25 file: AbstractEntityManagerFactoryBean.java class: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean method: buildNativeEntityManagerFactory line: 437 thread: restartedMain - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] time: 2022-01-31 13:26:25 file: JpaBaseConfiguration.java class: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration method: openEntityManagerInViewInterceptor line: 219 thread: restartedMain - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] time: 2022-01-31 13:26:26 file: DefaultSecurityFilterChain.java class: org.springframework.security.web.DefaultSecurityFilterChain method: <init> line: 51 thread: restartedMain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@409b0454, org.springframework.security.web.context.SecurityContextPersistenceFilter@522b225, org.springframework.security.web.header.HeaderWriterFilter@5108849, org.springframework.security.web.authentication.logout.LogoutFilter@48bb5194, ua.balu.toyshop.security.JwtFilter@82846d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4da58387, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6446794c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11f5b466, org.springframework.security.web.session.SessionManagementFilter@79e5e13b, org.springframework.security.web.access.ExceptionTranslationFilter@5cae96ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a3c0dbd]
+[WARN] time: 2022-01-31 13:26:26 file: ThymeleafAutoConfiguration.java class: org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration method: checkTemplateLocationExists line: 105 thread: restartedMain - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[INFO] time: 2022-01-31 13:26:26 file: OptionalLiveReloadServer.java class: org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer method: startServer line: 58 thread: restartedMain - LiveReload server is running on port 35729
+[INFO] time: 2022-01-31 13:26:26 file: TomcatWebServer.java class: org.springframework.boot.web.embedded.tomcat.TomcatWebServer method: start line: 220 thread: restartedMain - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] time: 2022-01-31 13:26:26 file: StartupInfoLogger.java class: ua.balu.toyshop.ToyShopApplication method: logStarted line: 61 thread: restartedMain - Started ToyShopApplication in 2.719 seconds (JVM running for 3533.139)
+[INFO] time: 2022-01-31 13:26:26 file: ConditionEvaluationDeltaLoggingListener.java class: org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener method: onApplicationEvent line: 63 thread: restartedMain - Condition evaluation unchanged
+[INFO] time: 2022-01-31 13:26:28 file: AbstractEntityManagerFactoryBean.java class: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean method: destroy line: 651 thread: Thread-37 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO] time: 2022-01-31 13:26:28 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: close line: 350 thread: Thread-37 - HikariPool-4 - Shutdown initiated...
+[INFO] time: 2022-01-31 13:26:28 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: close line: 352 thread: Thread-37 - HikariPool-4 - Shutdown completed.
+[INFO] time: 2022-01-31 13:26:28 file: StartupInfoLogger.java class: ua.balu.toyshop.ToyShopApplication method: logStarting line: 55 thread: restartedMain - Starting ToyShopApplication using Java 1.8.0_322 on DESKTOP-454NK93 with PID 16192 (C:\Users\Росс\Desktop\JavaPract\ToyShop\target\classes started by Росс in C:\Users\Росс\Desktop\JavaPract\ToyShop)
+[INFO] time: 2022-01-31 13:26:28 file: SpringApplication.java class: ua.balu.toyshop.ToyShopApplication method: logStartupProfileInfo line: 635 thread: restartedMain - No active profile set, falling back to default profiles: default
+[INFO] time: 2022-01-31 13:26:28 file: RepositoryConfigurationDelegate.java class: org.springframework.data.repository.config.RepositoryConfigurationDelegate method: registerRepositoriesIn line: 132 thread: restartedMain - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] time: 2022-01-31 13:26:28 file: RepositoryConfigurationDelegate.java class: org.springframework.data.repository.config.RepositoryConfigurationDelegate method: registerRepositoriesIn line: 201 thread: restartedMain - Finished Spring Data repository scanning in 41 ms. Found 10 JPA repository interfaces.
+[INFO] time: 2022-01-31 13:26:28 file: TomcatWebServer.java class: org.springframework.boot.web.embedded.tomcat.TomcatWebServer method: initialize line: 108 thread: restartedMain - Tomcat initialized with port(s): 8080 (http)
+[INFO] time: 2022-01-31 13:26:28 file: DirectJDKLog.java class: org.apache.catalina.core.StandardService method: log line: 173 thread: restartedMain - Starting service [Tomcat]
+[INFO] time: 2022-01-31 13:26:28 file: DirectJDKLog.java class: org.apache.catalina.core.StandardEngine method: log line: 173 thread: restartedMain - Starting Servlet engine: [Apache Tomcat/9.0.55]
+[INFO] time: 2022-01-31 13:26:28 file: DirectJDKLog.java class: org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] method: log line: 173 thread: restartedMain - Initializing Spring embedded WebApplicationContext
+[INFO] time: 2022-01-31 13:26:28 file: ServletWebServerApplicationContext.java class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext method: prepareWebApplicationContext line: 290 thread: restartedMain - Root WebApplicationContext: initialization completed in 290 ms
+[INFO] time: 2022-01-31 13:26:28 file: LogHelper.java class: org.hibernate.jpa.internal.util.LogHelper method: logPersistenceUnitInformation line: 31 thread: restartedMain - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] time: 2022-01-31 13:26:28 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: getConnection line: 110 thread: restartedMain - HikariPool-5 - Starting...
+[INFO] time: 2022-01-31 13:26:28 file: HikariDataSource.java class: com.zaxxer.hikari.HikariDataSource method: getConnection line: 123 thread: restartedMain - HikariPool-5 - Start completed.
+[INFO] time: 2022-01-31 13:26:28 file: Dialect.java class: org.hibernate.dialect.Dialect method: <init> line: 175 thread: restartedMain - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO] time: 2022-01-31 13:26:29 file: JtaPlatformInitiator.java class: org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator method: initiateService line: 52 thread: restartedMain - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO] time: 2022-01-31 13:26:29 file: AbstractEntityManagerFactoryBean.java class: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean method: buildNativeEntityManagerFactory line: 437 thread: restartedMain - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN] time: 2022-01-31 13:26:29 file: JpaBaseConfiguration.java class: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration method: openEntityManagerInViewInterceptor line: 219 thread: restartedMain - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO] time: 2022-01-31 13:26:29 file: DefaultSecurityFilterChain.java class: org.springframework.security.web.DefaultSecurityFilterChain method: <init> line: 51 thread: restartedMain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42116eb2, org.springframework.security.web.context.SecurityContextPersistenceFilter@4092acab, org.springframework.security.web.header.HeaderWriterFilter@115a3f4f, org.springframework.security.web.authentication.logout.LogoutFilter@2f0e9ce9, ua.balu.toyshop.security.JwtFilter@101acab3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28bae021, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68da123e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48c2807f, org.springframework.security.web.session.SessionManagementFilter@7efd932d, org.springframework.security.web.access.ExceptionTranslationFilter@6be0641c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1c51a768]
+[WARN] time: 2022-01-31 13:26:29 file: ThymeleafAutoConfiguration.java class: org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration method: checkTemplateLocationExists line: 105 thread: restartedMain - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[INFO] time: 2022-01-31 13:26:29 file: OptionalLiveReloadServer.java class: org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer method: startServer line: 58 thread: restartedMain - LiveReload server is running on port 35729
+[INFO] time: 2022-01-31 13:26:29 file: TomcatWebServer.java class: org.springframework.boot.web.embedded.tomcat.TomcatWebServer method: start line: 220 thread: restartedMain - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO] time: 2022-01-31 13:26:29 file: StartupInfoLogger.java class: ua.balu.toyshop.ToyShopApplication method: logStarted line: 61 thread: restartedMain - Started ToyShopApplication in 1.442 seconds (JVM running for 3536.402)
+[INFO] time: 2022-01-31 13:26:29 file: ConditionEvaluationDeltaLoggingListener.java class: org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener method: onApplicationEvent line: 63 thread: restartedMain - Condition evaluation unchanged
