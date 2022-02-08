@@ -3,6 +3,7 @@ package ua.balu.toyshop.service;
 import ua.balu.toyshop.dto.category.CategoryProfile;
 import ua.balu.toyshop.dto.category.CategoryResponse;
 import ua.balu.toyshop.dto.category.SuccessCreatedCategory;
+import java.util.List;
 
 public interface CategoryService {
     /**
@@ -18,4 +19,6 @@ public interface CategoryService {
      * @return {@code CategoryResponse}
      */
     CategoryResponse deleteCategory(CategoryProfile categoryProfile);
+
+    List<CategoryResponse> getAllCategories();
 }

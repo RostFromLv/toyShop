@@ -3,6 +3,7 @@ package ua.balu.toyshop.service;
 import ua.balu.toyshop.dto.auth.AuthenticationRequest;
 import ua.balu.toyshop.dto.user.*;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -53,4 +54,5 @@ public interface UserService {
      SuccessChangedStatus changeUserStatus(ChangeUserStatus userStatus,HttpServletRequest request);
 
      List<UserProfile> getAllUsers();
+     List<UserProfile> getUserByName(String name);
 }

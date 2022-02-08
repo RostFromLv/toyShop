@@ -57,7 +57,7 @@ public class FeedbackServiceImpl implements FeedbackService {
         return feedbackRepository
                 .findAllByPostId(postId)
                 .stream()
-                .map(feedback -> (FeedbackResponse) dtoConverter.ConvertToDto(feedback, FeedbackResponse.class))
+                .map(feedback -> (FeedbackResponse) dtoConverter.convertToDto(feedback, FeedbackResponse.class))
                 .collect(Collectors.toSet());
     }
 
@@ -84,7 +84,7 @@ public class FeedbackServiceImpl implements FeedbackService {
                         .withPost(post)
                         .withUser(requestUser));
 
-        return dtoConverter.ConvertToDto(savedFeedback, SuccessCreatedFeedback.class);
+        return dtoConverter.convertToDto(savedFeedback, SuccessCreatedFeedback.class);
     }
 
     @Override
@@ -101,7 +101,7 @@ public class FeedbackServiceImpl implements FeedbackService {
             throw new DatabaseRepositoryException(CANT_DELETE_FEEDBACK);
         }
 
-        return dtoConverter.ConvertToDto(feedback, SuccessDeletedFeedback.class);
+        return dtoConverter.convertToDto(feedback, SuccessDeletedFeedback.class);
     }
 
     public static LocalDateTime getDateTimeNow() {

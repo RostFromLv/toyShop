@@ -91,7 +91,7 @@ public class OrderServiceImpl implements OrderService {
                 .withDateTime(LocalDateTime.now())
                 .withPost(posts));
 
-        return dtoConverter.ConvertToDto(order, SuccessCreatedOrder.class);
+        return dtoConverter.convertToDto(order, SuccessCreatedOrder.class);
     }
 
     @Override
@@ -105,13 +105,13 @@ public class OrderServiceImpl implements OrderService {
             throw new DatabaseRepositoryException(String.format(CANT_DELETE_ORDER, order.getId()));
         }
         System.out.println(order);
-        return dtoConverter.ConvertToDto(order, SuccessDeletedOrder.class);
+        return dtoConverter.convertToDto(order, SuccessDeletedOrder.class);
     }
 
     @Override
     public Set<OrderResponse> getAllOrder() {
         return orderRepository.findAll().stream()
-                .map(order -> (OrderResponse) dtoConverter.ConvertToDto(order, OrderResponse.class))
+                .map(order -> (OrderResponse) dtoConverter.convertToDto(order, OrderResponse.class))
                 .collect(Collectors.toSet());
     }
 
@@ -121,7 +121,7 @@ public class OrderServiceImpl implements OrderService {
 
         return orderRepository.findAllByUser(user)
                 .stream()
-                .map(order -> (OrderResponse) dtoConverter.ConvertToDto(order, OrderResponse.class))
+                .map(order -> (OrderResponse) dtoConverter.convertToDto(order, OrderResponse.class))
                 .collect(Collectors.toSet());
     }
 

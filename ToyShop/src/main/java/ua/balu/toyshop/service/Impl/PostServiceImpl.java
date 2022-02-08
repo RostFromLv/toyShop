@@ -101,7 +101,7 @@ public class PostServiceImpl implements PostService {
             throw new DatabaseRepositoryException(CANT_CREATE_POST);
         }
 
-        return dtoConverter.ConvertToDto(post, SuccessCreatedPost.class);
+        return dtoConverter.convertToDto(post, SuccessCreatedPost.class);
     }
 
     //TODO +
@@ -126,7 +126,7 @@ public class PostServiceImpl implements PostService {
             throw new DatabaseRepositoryException("Cant delete Post");
         }
 
-        return dtoConverter.ConvertToDto(post, SuccessDeletedPost.class);
+        return dtoConverter.convertToDto(post, SuccessDeletedPost.class);
     }
 
     //TODO +
@@ -152,7 +152,7 @@ public class PostServiceImpl implements PostService {
                 .withActive(post.getActive())
                 .withCategories(categories);
 
-        return dtoConverter.ConvertToDto(postRepository.save(newPost), SuccessUpdatedPost.class);
+        return dtoConverter.convertToDto(postRepository.save(newPost), SuccessUpdatedPost.class);
     }
 
     //TODO +
@@ -167,7 +167,7 @@ public class PostServiceImpl implements PostService {
 
 
         return posts.stream()
-                .map(post -> (PostResponse) dtoConverter.ConvertToDto(post, PostResponse.class))
+                .map(post -> (PostResponse) dtoConverter.convertToDto(post, PostResponse.class))
                 .collect(Collectors.toSet());
     }
 
@@ -181,7 +181,7 @@ public class PostServiceImpl implements PostService {
         }
         List<Post> posts = postRepository.findAllByActiveFalse();
         return posts.stream()
-                .map(post -> (PostResponse) dtoConverter.ConvertToDto(post, PostResponse.class))
+                .map(post -> (PostResponse) dtoConverter.convertToDto(post, PostResponse.class))
                 .collect(Collectors.toSet());
     }
 
@@ -195,7 +195,7 @@ public class PostServiceImpl implements PostService {
         }
         List<Post> posts = postRepository.findAllByUserId(searchUser.getId());
 
-        return posts.stream().map(post -> (PostResponse) dtoConverter.ConvertToDto(post, PostResponse.class)).collect(Collectors.toSet());
+        return posts.stream().map(post -> (PostResponse) dtoConverter.convertToDto(post, PostResponse.class)).collect(Collectors.toSet());
     }
 
     //TODO +
@@ -220,7 +220,7 @@ public class PostServiceImpl implements PostService {
 
         System.out.println("--------------------------------------");
         posts.forEach(System.err::println);
-        return posts.stream().map(post -> (PostResponse) dtoConverter.ConvertToDto(post, PostResponse.class)).collect(Collectors.toSet());
+        return posts.stream().map(post -> (PostResponse) dtoConverter.convertToDto(post, PostResponse.class)).collect(Collectors.toSet());
     }
 
     @Override

@@ -20,7 +20,7 @@ public class DtoConverter {
         return modelMapper.map(dto, (Type) entity.getClass());
     }
 
-    public <E extends Convertible,D> D ConvertToDto(E entity,Type dto){
+    public <E extends Convertible,D> D convertToDto(E entity,Type dto){
         return modelMapper.map(entity,dto);
     }
 

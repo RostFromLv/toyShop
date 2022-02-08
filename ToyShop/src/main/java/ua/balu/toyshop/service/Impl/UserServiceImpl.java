@@ -93,7 +93,7 @@ public class UserServiceImpl implements UserService {
                                 .withPassword(encoderService.encodePassword(registrationUser.getPassword())));
 
         log.info("Add user: " + registrationUser.getEmail() + "| With id =" + registrationUser.getId());
-        return dtoConverter.ConvertToDto(user, SuccessRegisteredUser.class);
+        return dtoConverter.convertToDto(user, SuccessRegisteredUser.class);
     }
 
     @Override
@@ -112,7 +112,7 @@ public class UserServiceImpl implements UserService {
             throw new DatabaseRepositoryException();
         }
         log.info("Successfully user deleted with id " + userId);
-        return dtoConverter.ConvertToDto(user, SuccessDeletedUser.class);
+        return dtoConverter.convertToDto(user, SuccessDeletedUser.class);
     }
 
     @Override
@@ -144,7 +144,7 @@ public class UserServiceImpl implements UserService {
             user.setRole(role);
         }
 
-        return dtoConverter.ConvertToDto(userRepository.save(user), UserProfile.class);
+        return dtoConverter.convertToDto(userRepository.save(user), UserProfile.class);
     }
 
     @Override
@@ -166,12 +166,17 @@ public class UserServiceImpl implements UserService {
             userToChange.setStatus(status);
         }
 
-        return dtoConverter.ConvertToDto(userRepository.save(userToChange), SuccessChangedStatus.class);
+        return dtoConverter.convertToDto(userRepository.save(userToChange), SuccessChangedStatus.class);
     }
 
     @Override
     public List<UserProfile> getAllUsers() {
-        return userRepository.findAll().stream().map(user -> (UserProfile) dtoConverter.ConvertToDto(user, UserProfile.class)).collect(Collectors.toList());
+        return userRepository.findAll().stream().map(user -> (UserProfile) dtoConverter.convertToDto(user, UserProfile.class)).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<UserProfile> getUserByName(String name) {
+        return userRepository.findAllByName(name).stream().map(user -> (UserProfile)dtoConverter.convertToDto(user,UserProfile.class)).collect(Collectors.toList());
     }
 
     //TODO переробити логіку на таку як в UpdatePost якщо не буде зберыгати або створювати новий пост
@@ -191,7 +196,7 @@ public class UserServiceImpl implements UserService {
                 .withPassword(userToChange.getPassword())
                 .withRole(userToChange.getRole())
                 .withStatus(userToChange.getStatus()));
-        return dtoConverter.ConvertToDto(changedUser, SuccessUpdatedUser.class);
+        return dtoConverter.convertToDto(changedUser, SuccessUpdatedUser.class);
     }
 
 
