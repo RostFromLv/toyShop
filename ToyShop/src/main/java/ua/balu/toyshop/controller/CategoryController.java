@@ -69,11 +69,7 @@ public class CategoryController implements Api {
     @PreAuthorize("hasAnyAuthority('USER','ADMIN','MANAGER')")
     @GetMapping("/categories")
     public List<CategoryResponse> getAllCategories() {
-        return categoryRepository
-                .findAll()
-                .stream()
-                .map(category -> (CategoryResponse) dtoConverter.ConvertToDto(category, CategoryResponse.class))
-                .collect(Collectors.toList());
+        return getAllCategories();
     }
 
 }

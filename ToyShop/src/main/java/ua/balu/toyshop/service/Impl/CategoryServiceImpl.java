@@ -15,8 +15,9 @@ import ua.balu.toyshop.model.Category;
 import ua.balu.toyshop.repository.CategoryRepository;
 import ua.balu.toyshop.service.CategoryService;
 
-import java.util.Comparator;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -48,7 +49,7 @@ public class CategoryServiceImpl implements CategoryService {
         Category category = categoryRepository.save(dtoConverter.convertToEntity(categoryProfile, new Category()));
         log.debug("Added new category {}", category);
 
-        return dtoConverter.ConvertToDto(category, SuccessCreatedCategory.class);
+        return dtoConverter.convertToDto(category, SuccessCreatedCategory.class);
     }
 
     @Override
@@ -58,14 +59,14 @@ public class CategoryServiceImpl implements CategoryService {
 
         try {
             categoryRepository.delete(category);
-            categoryRepository.flush();
+//            categoryRepository.flush();  Не потрібен оскільки виконується 1 транзакція
         }catch (DatabaseRepositoryException e){
             throw  new DatabaseRepositoryException(String.format(CANT_DELETE_CATEGORY,category.getType()));
         }
 
         log.debug("Successfully deleted category"+category.getType());
 
-        return dtoConverter.ConvertToDto(category,CategoryResponse.class);
+        return dtoConverter.convertToDto(category,CategoryResponse.class);
     }
 
     public Category getCategoryByType(String categoryName){
@@ -82,11 +83,19 @@ public class CategoryServiceImpl implements CategoryService {
        return categoryRepository.findAll().stream().filter(category -> category.getType().equals(type)).findAny();
     }
 
-    public boolean existCategory(String categoryName) {
-        return categoryRepository
+    public List<CategoryResponse> getAllCategories(){
+       return categoryRepository
                 .findAll()
                 .stream()
-                .anyMatch(category -> category.getType().equals(categoryName));
+                .map(category -> (CategoryResponse) dtoConverter.convertToDto(category, CategoryResponse.class))
+                .collect(Collectors.toList());
+    }
+
+    public boolean existCategory(String categoryName) {
+        return categoryRepository.existsByType(categoryName);
+//                .findAll()
+//                .stream()
+//                .anyMatch(category -> category.getType().equals(categoryName));
 
     }
 

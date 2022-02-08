@@ -2,6 +2,7 @@ package ua.balu.toyshop.exception;
 
 
 public class DatabaseRepositoryException extends RuntimeException{
+
     public static final long serialVersionUID =1l;
     public static final String REPOSITORY_EXCEPTION = "Database repository eception";
 

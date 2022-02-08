@@ -54,7 +54,7 @@ public class ComplaintServiceImpl implements ComplaintService {
 
     @Override
     public Set<ComplaintResponse> getAllComplaintByPost(Long id) {
-        return complaintRepository.findAllByPostId(id).stream().map(complaint -> (ComplaintResponse) dtoConverter.ConvertToDto(complaint, ComplaintResponse.class)).collect(Collectors.toSet());
+        return complaintRepository.findAllByPostId(id).stream().map(complaint -> (ComplaintResponse) dtoConverter.convertToDto(complaint, ComplaintResponse.class)).collect(Collectors.toSet());
     }
 
     @Override
@@ -81,7 +81,7 @@ public class ComplaintServiceImpl implements ComplaintService {
                 .withUser(requestUser)
                 .withPost(complaintPost));
 
-        return dtoConverter.ConvertToDto(complaint, SuccessCreatedComplaint.class);
+        return dtoConverter.convertToDto(complaint, SuccessCreatedComplaint.class);
     }
 
     @Override
@@ -98,6 +98,6 @@ public class ComplaintServiceImpl implements ComplaintService {
             throw new DatabaseRepositoryException(COMPLAINT_DELETE_EXCEPTION);
         }
 
-        return dtoConverter.ConvertToDto(complaint, ComplaintResponse.class);
+        return dtoConverter.convertToDto(complaint, ComplaintResponse.class);
     }
 }

@@ -47,7 +47,7 @@ public class RoleServiceImpl implements RoleService {
         log.debug("Finding roles");
 
         return roleRepository.findAll().stream()
-                .map(role -> (RoleResponse) dtoConverter.ConvertToDto(role, RoleResponse.class))
+                .map(role -> (RoleResponse) dtoConverter.convertToDto(role, RoleResponse.class))
                 .collect(Collectors.toSet());
     }
 
@@ -56,7 +56,7 @@ public class RoleServiceImpl implements RoleService {
         if (roleExist(roleProfile.getName())) {
             throw new AlreadyExistException(String.format(ROLE_ALREADY_EXIST, roleProfile.getName()));
         }
-        return dtoConverter.ConvertToDto(roleRepository.save(dtoConverter.convertToEntity(roleProfile, new Role())), RoleResponse.class);
+        return dtoConverter.convertToDto(roleRepository.save(dtoConverter.convertToEntity(roleProfile, new Role())), RoleResponse.class);
     }
 
     @Override
@@ -71,7 +71,7 @@ public class RoleServiceImpl implements RoleService {
         } catch (DatabaseRepositoryException e) {
             throw new DatabaseRepositoryException(String.format(ROLE_DELETE_ESCEPTION, role.getName()));
         }
-        return dtoConverter.ConvertToDto(role, RoleResponse.class);
+        return dtoConverter.convertToDto(role, RoleResponse.class);
     }
 
     @Override
@@ -79,7 +79,7 @@ public class RoleServiceImpl implements RoleService {
 
         User user = userRepository.findById(id).orElseThrow(()-> new NotExistException(String.format(USER_DOESNT_EXIST_BY_ID,id)));
         Role userRole = user.getRole();
-        return dtoConverter.ConvertToDto(userRole, RoleResponse.class);
+        return dtoConverter.convertToDto(userRole, RoleResponse.class);
     }
 
 

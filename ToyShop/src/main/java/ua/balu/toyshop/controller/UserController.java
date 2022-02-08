@@ -114,7 +114,7 @@ public class UserController implements Api {
     @GetMapping("/users")
     public UserProfile getUsersByEmail(@RequestParam(name = "email") String email) {
         return dtoConverter.
-                ConvertToDto(userRepository.findByEmail(email).orElseThrow(NotExistException::new),
+                convertToDto(userRepository.findByEmail(email).orElseThrow(NotExistException::new),
                         UserProfile.class);
     }
 
@@ -126,7 +126,7 @@ public class UserController implements Api {
     @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/users/name")
     public List<UserProfile> getUsersByName(@RequestParam(name = "name") String name) {
-        return userRepository.findAllByName(name).stream().map(user -> (UserProfile)dtoConverter.ConvertToDto(user,UserProfile.class)).collect(Collectors.toList());
+        return getUsersByName(name);
     }
 
 }

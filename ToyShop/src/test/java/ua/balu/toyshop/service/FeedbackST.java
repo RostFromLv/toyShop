@@ -135,7 +135,7 @@ public class FeedbackST {
     @Test
     void getAllFeedbackByCorrectPostIdShouldReturnSetOfFeedbackResponse() {
         when(feedbackRepository.findAllByPostId(CORRECT_POST_ID)).thenReturn(feedbackList);
-        when(dtoConverter.ConvertToDto(correctFeedback, FeedbackResponse.class)).thenReturn(feedbackResponse);
+        when(dtoConverter.convertToDto(correctFeedback, FeedbackResponse.class)).thenReturn(feedbackResponse);
 
         assertThat(feedbackService.getAllFeedbackByPostId(CORRECT_POST_ID)).isEqualTo(feedbackResponseSet);
     }
@@ -163,7 +163,7 @@ public class FeedbackST {
                 .withUser(correctUser)
                 .withDateTime(DATE_TIME_NOW))).thenReturn(correctFeedback);
 
-        when(dtoConverter.ConvertToDto(correctFeedback, SuccessCreatedFeedback.class)).thenReturn(successCreatedFeedback);
+        when(dtoConverter.convertToDto(correctFeedback, SuccessCreatedFeedback.class)).thenReturn(successCreatedFeedback);
 
         SuccessCreatedFeedback actual = feedbackService.createFeedback(createFeedback, request);
 
@@ -197,7 +197,7 @@ public class FeedbackST {
         when(feedbackRepository.getById(CORRECT_FEEDBACK_ID)).thenReturn(correctFeedback);
         when(userService.getUserFromRequest(request)).thenReturn(correctUser);
         doNothing().when(feedbackRepository).delete(correctFeedback);
-        when(dtoConverter.ConvertToDto(correctFeedback, SuccessDeletedFeedback.class)).thenReturn(deletedFeedback);
+        when(dtoConverter.convertToDto(correctFeedback, SuccessDeletedFeedback.class)).thenReturn(deletedFeedback);
 
         SuccessDeletedFeedback actual = feedbackService.deleteFeedback(deleteFeedback, request);
         assertThat(actual).isEqualTo(successDeletedFeedback);
